@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiggle Button</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+
+        .button:hover {
+            animation: wiggle 0.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Wiggle Me!</button>
+</body>
+</html>

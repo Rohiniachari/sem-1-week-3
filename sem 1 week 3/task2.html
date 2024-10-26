@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sidebar Example</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+        }
+
+        
+        .sidebar-static {
+            background-color: #f4f4f4;
+            width: 200px;
+            padding: 20px;
+        }
+
+        
+        .sidebar-relative {
+            background-color: #e0e0e0;
+            width: 200px;
+            padding: 20px;
+            position: relative; 
+        }
+
+        
+        .sidebar-fixed {
+            background-color: #ccc;
+            width: 200px;
+            padding: 20px;
+            position: fixed; 
+            top: 0;
+            left: 0;
+        }
+
+       
+        .sidebar-absolute {
+            background-color: #b0b0b0;
+            width: 200px;
+            padding: 20px;
+            position: absolute; 
+            top: 20px; 
+            left: 0;
+        }
+
+        
+        .sidebar-sticky {
+            background-color: #a0a0a0;
+            width: 200px;
+            padding: 20px;
+            position: sticky; 
+            top: 0;
+        }
+
+       
+        .content {
+            flex: 1;
+            padding: 20px;
+            height: 2000px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar-static">Static Sidebar</div>
+    <div class="sidebar-relative">Relative Sidebar</div>
+    <div class="sidebar-fixed">Fixed Sidebar</div>
+    <div class="sidebar-absolute">Absolute Sidebar</div>
+    <div class="sidebar-sticky">Sticky Sidebar</div>
+
+    <div class="content">
+        <h1>Main Content Area</h1>
+        <p>Scroll down to see the sticky sidebar effect.</p>
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decorative Line</title>
+    <style>
+        h2 {
+            position: relative;
+            padding-bottom: 10px; /* Space for line */
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 50%; /* Line width */
+            height: 2px; /* Line height */
+            background: black; /* Line color */
+            position: absolute;
+            left: 0;
+            bottom: 0; /* Position at bottom of heading */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Heading</h2>
+
+</body>
+</html>

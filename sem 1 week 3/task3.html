@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fixed Header */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            position: fixed; 
+            top: 0;
+            width: 100%; 
+            z-index: 1000; 
+        }
+
+       
+        .content {
+            padding: 70px 20px; 
+            height: 2000px; 
+            background-color: #f4f4f4; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Fixed Header</div>
+
+    <div class="content">
+        <h1>Main Content Area</h1>
+        <p>Scroll down to see the fixed header effect.</p>
+    </div>
+
+</body>
+</html>

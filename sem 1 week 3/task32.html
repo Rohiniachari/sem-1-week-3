@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing Variable Example</title>
+    <style>
+        :root {
+            --spacing: 20px; /* Define spacing variable */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: var(--spacing); /* Use spacing variable for body padding */
+            background-color: #f4f4f4;
+        }
+
+        .box {
+            background-color: #3498db;
+            color: white;
+            padding: var(--spacing); /* Use spacing variable for padding */
+            margin-bottom: var(--spacing); /* Use spacing variable for margin */
+        }
+
+        .button {
+            background-color: white;
+            color: #3498db;
+            padding: var(--spacing); /* Use spacing variable for button padding */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">This is a box with padding and margin.</div>
+    <div class="box">Another box with the same spacing applied.</div>
+    <button class="button">Click Me</button>
+
+</body>
+</html>

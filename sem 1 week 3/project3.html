@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pricing Table</title>
+    <style>
+        :root {
+            --primary-color: #3498db; /* Primary color */
+            --hover-color: #2980b9; /* Hover color */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Stack cards on smaller screens */
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .pricing-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 200px; /* Flex items take equal space */
+            transition: transform 0.3s; /* Smooth transition */
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.05); /* Scale on hover */
+        }
+
+        .pricing-header {
+            font-size: 1.5em;
+            color: var(--primary-color);
+        }
+
+        .pricing-price {
+            font-size: 2em;
+            margin: 15px 0;
+        }
+
+        .pricing-button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pricing-button:hover {
+            background-color: var(--hover-color); /* Change button color on hover */
+        }
+
+        @media (max-width: 600px) {
+            .pricing-table {
+                flex-direction: column; /* Stack cards vertically */
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pricing Plans</h1>
+    <div class="pricing-table">
+        <div class="pricing-card">
+            <div class="pricing-header">Basic</div>
+            <div class="pricing-price">99/-/month</div>
+            <button class="pricing-button">Choose Plan</button>
+        </div>
+        <div class="pricing-card">
+            <div class="pricing-header">Standard</div>
+            <div class="pricing-price">999/-/month</div>
+            <button class="pricing-button">Choose Plan</button>
+        </div>
+        <div class="pricing-card">
+            <div class="pricing-header">Premium</div>
+            <div class="pricing-price">2999/-/month</div>
+            <button class="pricing-button">Choose Plan</button>
+        </div>
+    </div>
+
+</body>
+</html>
+

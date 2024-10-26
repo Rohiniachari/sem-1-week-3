@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button with Icon</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            position: relative;
+        }
+        .button::before {
+            content: "🔍"; /* Icon */
+            margin-right: 5px; /* Space between icon and text */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button">Search</button>
+
+</body>
+</html>

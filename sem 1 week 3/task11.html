@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Page Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 20px; /* Space between columns */
+            margin-top: 20px;
+        }
+        .column {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+    </div>
+
+</body>
+</html>
